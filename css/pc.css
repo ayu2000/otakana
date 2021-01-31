@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* PC用に付け足すCSS（画面幅が960px以上になった時に追加するCSS） */
+
+#header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	top: 4px;
+}
+
+.h1 img {
+	width: 200px;	
+}
+
+h2 img {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#top img {
+	width: 90%;
+	height: auto;
+	margin: 80px auto 40px;
+}
+
+.u-pc {
+    display: block;
+}
+
+.u-sp {
+    display: none;
+}
+
+main {
+	width: 840px;
+}
+
+#menu-box {
+	background: rgba(0,0,0,0);
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+#menu-box ul {
+	display: flex;
+}
+
+#menu-box li {
+	border-bottom: none;
+}
+
+#menu-box li a {
+	color: #BE8A68;
+}
+
+#menu-box li a:link {
+	color: #BE8A68;
+}
+
+a:visited { /* 訪問済みリンク */
+	color:#BE8A68;
+	text-decoration:none;
+}
+
+#menu-box li a:hover {
+	color: #71533F;
+}
+
+.about {
+/*
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+*/
+	padding-top: 30px;
+}
+
+.about-text {
+	width: 100%;
+	text-align: left;
+}
+
+.about img {
+	margin: 0 auto;
+	width: 60%;
+}
+
+#ranking p {
+	padding: 30px;
+}
+
+.no img {
+	width: 100%;
+}
+
+.no1-pc {
+	display: block;
+}
+
+
+.no1, .no2 {
+	display: none;
+}
+
+.box-pc {
+	display: block;
+	margin: 0 auto 130px;
+}
+
+.carousel {
+	width: 100%;
+}
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+/*  background: #EEE;*/
+	width: 500px;
+	margin: 0 auto;
+}
+
+.carousel-cell {
+  width: 35%;
+  height: 200px;
+  margin-right: 10px;
+/*  background: #8C8;*/
+  border-radius: 5px;
+/*  counter-increment: carousel-cell;*/
+}
+
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+/*    content: counter(carousel-cell);*/
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+
+.carousel-cell.is-selected {
+/*  background: #ED2;*/
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+/*  content: counter(carousel-cell);*/
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.box {
+	display: none;
+}
+
+
+#contact p {
+	padding-top: 30px;
+}
+
+#page-top img {
+    display: block;
+}
+
+#page-top {
+    width: 90px; /* 画像横サイズ */
+    height:90px; /* 画像縦サイズ */
+    position: fixed;
+    bottom: 5px; /* 表示位置 */
+    right: 5px; /* 表示位置 */
+    cursor:pointer; /* マウスカーソルを変更 */
+}
